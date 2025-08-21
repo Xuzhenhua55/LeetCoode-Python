@@ -1,0 +1,101 @@
+[
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二分法.34.在排序数组中查找元素的第一个和最后一个位置",
+        "description": "二分法.34.在排序数组中查找元素的第一个和最后一个位置",
+        "peekOfCode": "class Solution(object):\n    # 最后一个小于target的数\n    def findLeft(self,nums,target):\n        left,right=0,len(nums)\n        while(left<right):\n            mid=left+(right-left)/2\n            if nums[mid]==target or nums[mid]>target:\n                right=mid\n            else:\n                left=mid+1",
+        "detail": "二分法.34.在排序数组中查找元素的第一个和最后一个位置",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二分法.35.搜索插入位置",
+        "description": "二分法.35.搜索插入位置",
+        "peekOfCode": "class Solution(object):\n    def searchInsert(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        left,right=0,len(nums)\n        while left<right:\n            mid=left+(right-left)/2",
+        "detail": "二分法.35.搜索插入位置",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二分法.367.有效的完全平方数",
+        "description": "二分法.367.有效的完全平方数",
+        "peekOfCode": "class Solution(object):\n    def isPerfectSquare(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: bool\n        \"\"\"\n        left,right=0,num+1\n        while left<right:\n            mid=left+(right-left)/2\n            if mid*mid <= num:",
+        "detail": "二分法.367.有效的完全平方数",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二分法.69.x的平方根",
+        "description": "二分法.69.x的平方根",
+        "peekOfCode": "class Solution(object):\n    def mySqrt(self, x):\n        \"\"\"\n        :type x: int\n        :rtype: int\n        \"\"\"\n        left,right=0,x+1\n        while left<right:\n            mid=left+(right-left)/2\n            if mid*mid<x or mid*mid ==x:",
+        "detail": "二分法.69.x的平方根",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二分法.704. 二分查找",
+        "description": "二分法.704. 二分查找",
+        "peekOfCode": "class Solution(object):\n    def search(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        left=0,right=len(nums-1)\n        while(left<=right):\n            mid=left+(right-left)/2",
+        "detail": "二分法.704. 二分查找",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二分法.704. 二分查找",
+        "description": "二分法.704. 二分查找",
+        "peekOfCode": "class Solution(object):\n    def search(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        left,right=0,len(nums)\n        while(left<right):\n            mid=left+(right-left)/2",
+        "detail": "二分法.704. 二分查找",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二分法.977.有序数组的平方",
+        "description": "二分法.977.有序数组的平方",
+        "peekOfCode": "class Solution(object):\n    def sortedSquares(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[int]\n        \"\"\"\n        result=[]\n        left,right=0,len(nums)-1\n        while left<=right:\n            if abs(nums[left])<abs(nums[right]):",
+        "detail": "二分法.977.有序数组的平方",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "双指针与快慢指针.26.删除有序数组中的重复项",
+        "description": "双指针与快慢指针.26.删除有序数组中的重复项",
+        "peekOfCode": "class Solution(object):\n    def afterBackspace(self, input_str):\n        str_list = list(input_str)\n        slow = 0\n        for fast in range(len(str_list)):\n            if str_list[fast] != '#':\n                str_list[slow] = str_list[fast]\n                slow += 1\n            else:\n                slow -= 1",
+        "detail": "双指针与快慢指针.26.删除有序数组中的重复项",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "双指针与快慢指针.27.移除元素",
+        "description": "双指针与快慢指针.27.移除元素",
+        "peekOfCode": "class Solution(object):\n    def removeElement(self, nums, val):\n        \"\"\"\n        :type nums: List[int]\n        :type val: int\n        :rtype: int\n        \"\"\"\n        count=0\n        slow,fast=0,0\n        while fast<len(nums):",
+        "detail": "双指针与快慢指针.27.移除元素",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "滑动窗口.209.长度最小的子数组",
+        "description": "滑动窗口.209.长度最小的子数组",
+        "peekOfCode": "class Solution(object):\n    def minSubArrayLen(self, target, nums):\n        \"\"\"\n        :type target: int\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        windowValue=0\n        left,right=0,0\n        result=float('inf')",
+        "detail": "滑动窗口.209.长度最小的子数组",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "滑动窗口.904.水果成篮",
+        "description": "滑动窗口.904.水果成篮",
+        "peekOfCode": "class Solution(object):\n    def totalFruit(self, fruits):\n        \"\"\"\n        :type fruits: List[int]\n        :rtype: int\n        \"\"\"\n        fruitMap=dict()\n        left,right=0,0\n        result=float('-inf')\n        while right<len(fruits):",
+        "detail": "滑动窗口.904.水果成篮",
+        "documentation": {}
+    }
+]
