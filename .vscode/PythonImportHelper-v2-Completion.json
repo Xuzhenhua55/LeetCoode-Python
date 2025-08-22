@@ -13,7 +13,7 @@
         "kind": 6,
         "importPath": "二分法.35.搜索插入位置",
         "description": "二分法.35.搜索插入位置",
-        "peekOfCode": "class Solution(object):\n    def searchInsert(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        left,right=0,len(nums)\n        while left<right:\n            mid=left+(right-left)/2",
+        "peekOfCode": "class Solution(object):\n    def searchInsert(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        left, right = 0, len(nums)\n        while left < right:\n            mid = left + (right - left) / 2",
         "detail": "二分法.35.搜索插入位置",
         "documentation": {}
     },
@@ -83,10 +83,64 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "基础模拟.54.螺旋矩阵",
+        "description": "基础模拟.54.螺旋矩阵",
+        "peekOfCode": "class Solution(object):\n    def spiralOrder(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        m, n = len(matrix), len(matrix[0])\n        x, y = 0, 0\n        resultList = []\n        while m > 1 and n > 1:",
+        "detail": "基础模拟.54.螺旋矩阵",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "基础模拟.54.螺旋矩阵",
+        "description": "基础模拟.54.螺旋矩阵",
+        "peekOfCode": "s = Solution()\ns.spiralOrder([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])",
+        "detail": "基础模拟.54.螺旋矩阵",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "基础模拟.59.螺旋矩阵II",
+        "description": "基础模拟.59.螺旋矩阵II",
+        "peekOfCode": "class Solution(object):\n    def generateMatrix(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[List[int]]\n        \"\"\"\n        resultMatrix = [[0]*n for _ in range(n)]\n        x, y = 0, 0\n        num = 1\n        maxValue, length = n*n, n",
+        "detail": "基础模拟.59.螺旋矩阵II",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "基础模拟.59.螺旋矩阵II",
+        "description": "基础模拟.59.螺旋矩阵II",
+        "peekOfCode": "s = Solution()\ns.generateMatrix([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])",
+        "detail": "基础模拟.59.螺旋矩阵II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "滑动窗口.209.长度最小的子数组",
         "description": "滑动窗口.209.长度最小的子数组",
         "peekOfCode": "class Solution(object):\n    def minSubArrayLen(self, target, nums):\n        \"\"\"\n        :type target: int\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        windowValue=0\n        left,right=0,0\n        result=float('inf')",
         "detail": "滑动窗口.209.长度最小的子数组",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "滑动窗口.76. 最小覆盖子串",
+        "description": "滑动窗口.76. 最小覆盖子串",
+        "peekOfCode": "class Solution(object):\n    # 2中的每一个key对应的value\n    def needShrink(self, dict1, dict2, ch):\n        contain = True\n        for key in dict2:\n            if dict1.get(key, 0) < dict2[key]:\n                contain = False\n                break\n        if contain and (ch not in dict2 or dict2[ch] <= dict1[ch]-1):\n            return True, True",
+        "detail": "滑动窗口.76. 最小覆盖子串",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "滑动窗口.76. 最小覆盖子串",
+        "description": "滑动窗口.76. 最小覆盖子串",
+        "peekOfCode": "s = Solution()\n# 测试用例\nprint(s.minWindow(\"ADOBECODEBANC\", \"ABC\"))  # 期望输出 \"BANC\"",
+        "detail": "滑动窗口.76. 最小覆盖子串",
         "documentation": {}
     },
     {
