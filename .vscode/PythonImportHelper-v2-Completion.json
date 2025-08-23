@@ -119,6 +119,15 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "基础模拟.LCR146.螺旋遍历二维数组",
+        "description": "基础模拟.LCR146.螺旋遍历二维数组",
+        "peekOfCode": "class Solution(object):\n    def spiralArray(self, array):\n        \"\"\"\n        :type array: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        if len(array)==0:\n            return []\n        m,n=len(array),len(array[0])\n        x,y=0,0",
+        "detail": "基础模拟.LCR146.螺旋遍历二维数组",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "滑动窗口.209.长度最小的子数组",
         "description": "滑动窗口.209.长度最小的子数组",
         "peekOfCode": "class Solution(object):\n    def minSubArrayLen(self, target, nums):\n        \"\"\"\n        :type target: int\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        windowValue=0\n        left,right=0,0\n        result=float('inf')",
@@ -150,6 +159,78 @@
         "description": "滑动窗口.904.水果成篮",
         "peekOfCode": "class Solution(object):\n    def totalFruit(self, fruits):\n        \"\"\"\n        :type fruits: List[int]\n        :rtype: int\n        \"\"\"\n        fruitMap=dict()\n        left,right=0,0\n        result=float('-inf')\n        while right<len(fruits):",
         "detail": "滑动窗口.904.水果成篮",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "链表.19.删除链表的倒数第 N 个结点",
+        "description": "链表.19.删除链表的倒数第 N 个结点",
+        "peekOfCode": "class ListNode(object):\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\nclass Solution(object):\n    def removeNthFromEnd(self, head, n):\n        \"\"\"\n        :type head: Optional[ListNode]\n        :type n: int\n        :rtype: Optional[ListNode]",
+        "detail": "链表.19.删除链表的倒数第 N 个结点",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "链表.19.删除链表的倒数第 N 个结点",
+        "description": "链表.19.删除链表的倒数第 N 个结点",
+        "peekOfCode": "class Solution(object):\n    def removeNthFromEnd(self, head, n):\n        \"\"\"\n        :type head: Optional[ListNode]\n        :type n: int\n        :rtype: Optional[ListNode]\n        \"\"\"\n        dummyHead=ListNode(0,head)\n        slow,fast=dummyHead,dummyHead\n        for i in range(n-1):",
+        "detail": "链表.19.删除链表的倒数第 N 个结点",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "链表.203.移除链表元素",
+        "description": "链表.203.移除链表元素",
+        "peekOfCode": "class ListNode(object):\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\nclass Solution(object):\n    def removeElements(self, head, val):\n        \"\"\"\n        :type head: Optional[ListNode]\n        :type val: int\n        :rtype: Optional[ListNode]",
+        "detail": "链表.203.移除链表元素",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "链表.203.移除链表元素",
+        "description": "链表.203.移除链表元素",
+        "peekOfCode": "class Solution(object):\n    def removeElements(self, head, val):\n        \"\"\"\n        :type head: Optional[ListNode]\n        :type val: int\n        :rtype: Optional[ListNode]\n        \"\"\"\n        if head == None:\n            return None\n        dummyHead=ListNode(0,head)",
+        "detail": "链表.203.移除链表元素",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "链表.206.反转链表",
+        "description": "链表.206.反转链表",
+        "peekOfCode": "class ListNode(object):\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\nclass Solution(object):\n    def reverseList(self, head):\n        \"\"\"\n        :type head: Optional[ListNode]\n        :rtype: Optional[ListNode]\n        \"\"\"",
+        "detail": "链表.206.反转链表",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "链表.206.反转链表",
+        "description": "链表.206.反转链表",
+        "peekOfCode": "class Solution(object):\n    def reverseList(self, head):\n        \"\"\"\n        :type head: Optional[ListNode]\n        :rtype: Optional[ListNode]\n        \"\"\"\n        if head==None or head.next==None:\n            return head\n        dummyHead=ListNode(0,head)\n        pre,cur=dummyHead,dummyHead.next",
+        "detail": "链表.206.反转链表",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "链表.24.两两交换链表中的节点",
+        "description": "链表.24.两两交换链表中的节点",
+        "peekOfCode": "class ListNode(object):\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\nclass Solution(object):\n    def swapPairs(self, head):\n        \"\"\"\n        :type head: Optional[ListNode]\n        :rtype: Optional[ListNode]\n        \"\"\"",
+        "detail": "链表.24.两两交换链表中的节点",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "链表.24.两两交换链表中的节点",
+        "description": "链表.24.两两交换链表中的节点",
+        "peekOfCode": "class Solution(object):\n    def swapPairs(self, head):\n        \"\"\"\n        :type head: Optional[ListNode]\n        :rtype: Optional[ListNode]\n        \"\"\"\n        if head==None or head.next==None:\n            return head\n        dummyHead=ListNode(0,head)\n        pre,cur,after=dummyHead,dummyHead.next,dummyHead.next.next",
+        "detail": "链表.24.两两交换链表中的节点",
         "documentation": {}
     }
 ]
