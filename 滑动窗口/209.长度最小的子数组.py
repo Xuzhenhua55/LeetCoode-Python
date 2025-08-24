@@ -10,11 +10,11 @@ class Solution(object):
         result=float('inf')
         while right<len(nums):
             windowValue+=nums[right]
-            while left<right and windowValue-nums[left]>=target:
+            while windowValue>=target:
+                if right-left+1 < result:
+                    result = right-left+1
                 windowValue-=nums[left]
                 left+=1
-            if right-left+1<result and windowValue>=target:
-                result=right-left+1
             right+=1
         if result!=float('inf'):
             return result

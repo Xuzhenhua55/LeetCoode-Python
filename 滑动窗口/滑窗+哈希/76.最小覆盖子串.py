@@ -41,10 +41,3 @@ class Solution(object):
             return ""
         else:
             return result
-
-
-# 创建对象
-s = Solution()
-
-# 测试用例
-print(s.minWindow("ADOBECODEBANC", "ABC"))  # 期望输出 "BANC"

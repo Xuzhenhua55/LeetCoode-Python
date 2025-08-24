@@ -65,6 +65,24 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "双指针与快慢指针.15.三数之和",
+        "description": "双指针与快慢指针.15.三数之和",
+        "peekOfCode": "class Solution(object):\n    def threeSum(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        nums=sorted(nums)\n        resultList=[]\n        for i in range(len(nums)):\n            if nums[i]>0:",
+        "detail": "双指针与快慢指针.15.三数之和",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "双指针与快慢指针.18.四数之和",
+        "description": "双指针与快慢指针.18.四数之和",
+        "peekOfCode": "class Solution(object):\n    def fourSum(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: List[List[int]]\n        \"\"\"\n        nums=sorted(nums)\n        resultList=[]\n        for i in range(len(nums)):",
+        "detail": "双指针与快慢指针.18.四数之和",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "双指针与快慢指针.26.删除有序数组中的重复项",
         "description": "双指针与快慢指针.26.删除有序数组中的重复项",
         "peekOfCode": "class Solution(object):\n    def afterBackspace(self, input_str):\n        str_list = list(input_str)\n        slow = 0\n        for fast in range(len(str_list)):\n            if str_list[fast] != '#':\n                str_list[slow] = str_list[fast]\n                slow += 1\n            else:\n                slow -= 1",
@@ -78,6 +96,96 @@
         "description": "双指针与快慢指针.27.移除元素",
         "peekOfCode": "class Solution(object):\n    def removeElement(self, nums, val):\n        \"\"\"\n        :type nums: List[int]\n        :type val: int\n        :rtype: int\n        \"\"\"\n        count=0\n        slow,fast=0,0\n        while fast<len(nums):",
         "detail": "双指针与快慢指针.27.移除元素",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "哈希表.1.两数之和",
+        "description": "哈希表.1.两数之和",
+        "peekOfCode": "class Solution(object):\n    def twoSum(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: List[int]\n        \"\"\"\n        indexDict=dict()\n        for i in range(len(nums)):\n            if target-nums[i] in indexDict:",
+        "detail": "哈希表.1.两数之和",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "哈希表.202.快乐数",
+        "description": "哈希表.202.快乐数",
+        "peekOfCode": "class Solution(object):\n    def isHappy(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: bool\n        \"\"\"\n        usedSet=set()\n        while True:\n            sum=0\n            while n>0:",
+        "detail": "哈希表.202.快乐数",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "哈希表.242.有效的字母异位词",
+        "description": "哈希表.242.有效的字母异位词",
+        "peekOfCode": "class Solution(object):\n    def isAnagram(self, s, t):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :rtype: bool\n        \"\"\"\n        sCountDict=dict()\n        tCountDict=dict()\n        for ch in s:",
+        "detail": "哈希表.242.有效的字母异位词",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "哈希表.242.有效的字母异位词",
+        "description": "哈希表.242.有效的字母异位词",
+        "peekOfCode": "class Solution(object):\n    def isAnagram(self, s, t):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :rtype: bool\n        \"\"\"\n        sCountDict = dict()\n        tCountDict = dict()\n        for ch in s:",
+        "detail": "哈希表.242.有效的字母异位词",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "哈希表.349.两个数组的交集",
+        "description": "哈希表.349.两个数组的交集",
+        "peekOfCode": "class Solution(object):\n    def intersection(self, nums1, nums2):\n        \"\"\"\n        :type nums1: List[int]\n        :type nums2: List[int]\n        :rtype: List[int]\n        \"\"\"\n        numsSet1,numsSet2=set(),set()\n        for num in nums1:\n            numsSet1.add(num)",
+        "detail": "哈希表.349.两个数组的交集",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "哈希表.350.两个数组的交集II",
+        "description": "哈希表.350.两个数组的交集II",
+        "peekOfCode": "class Solution(object):\n    def intersect(self, nums1, nums2):\n        \"\"\"\n        :type nums1: List[int]\n        :type nums2: List[int]\n        :rtype: List[int]\n        \"\"\"\n        numsDict1,numsDict2=dict(),dict()\n        for num in nums1:\n            numsDict1[num]=numsDict1.get(num,0)+1",
+        "detail": "哈希表.350.两个数组的交集II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "哈希表.383.赎金信",
+        "description": "哈希表.383.赎金信",
+        "peekOfCode": "class Solution(object):\n    def canConstruct(self, ransomNote, magazine):\n        \"\"\"\n        :type ransomNote: str\n        :type magazine: str\n        :rtype: bool\n        \"\"\"\n        magazineCountList=[0]*26\n        for ch in magazine:\n            magazineCountList[ord(ch)-ord('a')]+=1",
+        "detail": "哈希表.383.赎金信",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "哈希表.454.四数相加II",
+        "description": "哈希表.454.四数相加II",
+        "peekOfCode": "class Solution(object):\n    def fourSumCount(self, nums1, nums2, nums3, nums4):\n        \"\"\"\n        :type nums1: List[int]\n        :type nums2: List[int]\n        :type nums3: List[int]\n        :type nums4: List[int]\n        :rtype: int\n        \"\"\"\n        countDict=dict()",
+        "detail": "哈希表.454.四数相加II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "哈希表.49.字母异位词分组",
+        "description": "哈希表.49.字母异位词分组",
+        "peekOfCode": "class Solution(object):\n    def groupAnagrams(self, strs):\n        \"\"\"\n        :type strs: List[str]\n        :rtype: List[List[str]]\n        \"\"\"\n        from collections import defaultdict\n        usedList=[0]*len(strs)\n        resultList=[]\n        for i in range(len(strs)):",
+        "detail": "哈希表.49.字母异位词分组",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "哈希表.49.字母异位词分组",
+        "description": "哈希表.49.字母异位词分组",
+        "peekOfCode": "class Solution(object):\n    def groupAnagrams(self, strs):\n        \"\"\"\n        :type strs: List[str]\n        :rtype: List[List[str]]\n        \"\"\"\n        str_dict=dict()\n        for str in strs:\n            sortedStr=''.join(sorted(str))\n            if sortedStr not in str_dict:",
+        "detail": "哈希表.49.字母异位词分组",
         "documentation": {}
     },
     {
@@ -128,6 +236,33 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "滑动窗口.滑窗+哈希.438.找到字符串中所有字母异位词",
+        "description": "滑动窗口.滑窗+哈希.438.找到字符串中所有字母异位词",
+        "peekOfCode": "class Solution(object):\n    def findAnagrams(self, s, p):\n        \"\"\"\n        :type s: str\n        :type p: str\n        :rtype: List[int]\n        \"\"\"\n        if len(s)<len(p):\n            return []\n        resultList=[]",
+        "detail": "滑动窗口.滑窗+哈希.438.找到字符串中所有字母异位词",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "滑动窗口.滑窗+哈希.76.最小覆盖子串",
+        "description": "滑动窗口.滑窗+哈希.76.最小覆盖子串",
+        "peekOfCode": "class Solution(object):\n    # 2中的每一个key对应的value\n    def needShrink(self, dict1, dict2, ch):\n        contain = True\n        for key in dict2:\n            if dict1.get(key, 0) < dict2[key]:\n                contain = False\n                break\n        if contain and (ch not in dict2 or dict2[ch] <= dict1[ch]-1):\n            return True, True",
+        "detail": "滑动窗口.滑窗+哈希.76.最小覆盖子串",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "滑动窗口.滑窗+哈希.904.水果成篮",
+        "description": "滑动窗口.滑窗+哈希.904.水果成篮",
+        "peekOfCode": "class Solution(object):\n    def totalFruit(self, fruits):\n        \"\"\"\n        :type fruits: List[int]\n        :rtype: int\n        \"\"\"\n        fruitMap=dict()\n        left,right=0,0\n        result=float('-inf')\n        while right<len(fruits):",
+        "detail": "滑动窗口.滑窗+哈希.904.水果成篮",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "滑动窗口.209.长度最小的子数组",
         "description": "滑动窗口.209.长度最小的子数组",
         "peekOfCode": "class Solution(object):\n    def minSubArrayLen(self, target, nums):\n        \"\"\"\n        :type target: int\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        windowValue=0\n        left,right=0,0\n        result=float('inf')",
@@ -135,30 +270,39 @@
         "documentation": {}
     },
     {
-        "label": "Solution",
+        "label": "ListNode",
         "kind": 6,
-        "importPath": "滑动窗口.76. 最小覆盖子串",
-        "description": "滑动窗口.76. 最小覆盖子串",
-        "peekOfCode": "class Solution(object):\n    # 2中的每一个key对应的value\n    def needShrink(self, dict1, dict2, ch):\n        contain = True\n        for key in dict2:\n            if dict1.get(key, 0) < dict2[key]:\n                contain = False\n                break\n        if contain and (ch not in dict2 or dict2[ch] <= dict1[ch]-1):\n            return True, True",
-        "detail": "滑动窗口.76. 最小覆盖子串",
-        "documentation": {}
-    },
-    {
-        "label": "s",
-        "kind": 5,
-        "importPath": "滑动窗口.76. 最小覆盖子串",
-        "description": "滑动窗口.76. 最小覆盖子串",
-        "peekOfCode": "s = Solution()\n# 测试用例\nprint(s.minWindow(\"ADOBECODEBANC\", \"ABC\"))  # 期望输出 \"BANC\"",
-        "detail": "滑动窗口.76. 最小覆盖子串",
+        "importPath": "链表.142.环形链表II",
+        "description": "链表.142.环形链表II",
+        "peekOfCode": "class ListNode(object):\n    def __init__(self, x):\n        self.val = x\n        self.next = None\nclass Solution(object):\n    def detectCycle(self, head):\n        \"\"\"\n        :type head: ListNode\n        :rtype: ListNode\n        \"\"\"",
+        "detail": "链表.142.环形链表II",
         "documentation": {}
     },
     {
         "label": "Solution",
         "kind": 6,
-        "importPath": "滑动窗口.904.水果成篮",
-        "description": "滑动窗口.904.水果成篮",
-        "peekOfCode": "class Solution(object):\n    def totalFruit(self, fruits):\n        \"\"\"\n        :type fruits: List[int]\n        :rtype: int\n        \"\"\"\n        fruitMap=dict()\n        left,right=0,0\n        result=float('-inf')\n        while right<len(fruits):",
-        "detail": "滑动窗口.904.水果成篮",
+        "importPath": "链表.142.环形链表II",
+        "description": "链表.142.环形链表II",
+        "peekOfCode": "class Solution(object):\n    def detectCycle(self, head):\n        \"\"\"\n        :type head: ListNode\n        :rtype: ListNode\n        \"\"\"\n        if head==None or head.next==None:\n            return None\n        slow,fast=head,head\n        # 如果是在同一个起点，那么需要移动之后再判断是否相等",
+        "detail": "链表.142.环形链表II",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "链表.160.相交链表",
+        "description": "链表.160.相交链表",
+        "peekOfCode": "class ListNode(object):\n    def __init__(self, x):\n        self.val = x\n        self.next = None\n# 掌握了No.19后这道题就会有一定的思路\nclass Solution(object):\n    def getIntersectionNode(self, headA, headB):\n        \"\"\"\n        :type head1, head1: ListNode\n        :rtype: ListNode",
+        "detail": "链表.160.相交链表",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "链表.160.相交链表",
+        "description": "链表.160.相交链表",
+        "peekOfCode": "class Solution(object):\n    def getIntersectionNode(self, headA, headB):\n        \"\"\"\n        :type head1, head1: ListNode\n        :rtype: ListNode\n        \"\"\"\n        if headA==None or headB==None or headA==headB:\n            return headA\n        node1,node2=headA,headB\n        while node1.next!=None and node2.next!=None:",
+        "detail": "链表.160.相交链表",
         "documentation": {}
     },
     {
