@@ -1,11 +1,21 @@
-# 🚀 我的LeetCode刷题日记
+# 🚀 LeetCode刷题日记
+
+<p align="left">
+  <a href="https://github.com/Xuzhenhua55/LeetCoode-Python">
+    <img src="https://img.shields.io/badge/📑-LeetCodeStudy-blue" alt="Survey Paper"/>
+  </a>
+  <img src="https://img.shields.io/github/last-commit/Xuzhenhua55/LeetCoode-Python?color=green" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/stars/Xuzhenhua55/LeetCoode-Python?color=yellow" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/Xuzhenhua55/LeetCoode-Python?color=lightblue" alt="Forks"/>
+</p>
+
 
 ## 嗨！这里是我的刷题小窝 👋
 
-这个仓库记录着我每天和算法题"搏斗"的日常～用Python一行行代码征服那些看起来很可怕的题目！
-
-定时更新，记录成长轨迹，希望某天回头看的时候能感慨一句："哇，我当时怎么连这个都不会！" 😄
+定时更新，记录成长轨迹，同时为了方便快速回顾同一类型的题目，开创该仓库~
+保研C++->第一段实习Java->目前的Python选手，2024到2027备战算法岗~
+加油丫！希望能够熟练使用Python刷题~
 
 ---
-
-*Happy Coding! 愿bug远离，AC常在！* ✨
+感兴趣的同学可以根据我的Commit记录一起刷呀！
+Happy Coding Everyday or EveryWeek or ... EveryMonth!

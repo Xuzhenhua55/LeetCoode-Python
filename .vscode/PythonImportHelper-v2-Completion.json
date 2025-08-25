@@ -74,6 +74,15 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "双指针与快慢指针.151.反转字符串中的单词",
+        "description": "双指针与快慢指针.151.反转字符串中的单词",
+        "peekOfCode": "class Solution(object):\n    def reverseWords(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        s=' '+s\n        right = len(s)-1\n        resultList=[]\n        while right>0:",
+        "detail": "双指针与快慢指针.151.反转字符串中的单词",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "双指针与快慢指针.18.四数之和",
         "description": "双指针与快慢指针.18.四数之和",
         "peekOfCode": "class Solution(object):\n    def fourSum(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: List[List[int]]\n        \"\"\"\n        nums=sorted(nums)\n        resultList=[]\n        for i in range(len(nums)):",
@@ -96,6 +105,60 @@
         "description": "双指针与快慢指针.27.移除元素",
         "peekOfCode": "class Solution(object):\n    def removeElement(self, nums, val):\n        \"\"\"\n        :type nums: List[int]\n        :type val: int\n        :rtype: int\n        \"\"\"\n        count=0\n        slow,fast=0,0\n        while fast<len(nums):",
         "detail": "双指针与快慢指针.27.移除元素",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "双指针与快慢指针.28.找出字符串中第一个匹配项的下标",
+        "description": "双指针与快慢指针.28.找出字符串中第一个匹配项的下标",
+        "peekOfCode": "class Solution(object):\n    def strStr(self, haystack, needle):\n        \"\"\"\n        :type haystack: str\n        :type needle: str\n        :rtype: int\n        \"\"\"\n        resultList=[]\n        for left in range(len(haystack)):\n            if haystack[left]!=needle[0]:",
+        "detail": "双指针与快慢指针.28.找出字符串中第一个匹配项的下标",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "双指针与快慢指针.283.移动零",
+        "description": "双指针与快慢指针.283.移动零",
+        "peekOfCode": "class Solution(object):\n    def moveZeroes(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: None Do not return anything, modify nums in-place instead.\n        \"\"\"\n        slow, fast = 0, 0\n        while fast < len(nums):\n            if nums[fast] == 0:\n                fast += 1",
+        "detail": "双指针与快慢指针.283.移动零",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "双指针与快慢指针.344.反转字符串",
+        "description": "双指针与快慢指针.344.反转字符串",
+        "peekOfCode": "class Solution(object):\n    def reverseString(self, s):\n        \"\"\"\n        :type s: List[str]\n        :rtype: None Do not return anything, modify s in-place instead.\n        \"\"\"\n        left,right=0,len(s)-1\n        while left<right:\n            s[left],s[right]=s[right],s[left]\n            left+=1",
+        "detail": "双指针与快慢指针.344.反转字符串",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "双指针与快慢指针.541.反转字符串II",
+        "description": "双指针与快慢指针.541.反转字符串II",
+        "peekOfCode": "class Solution(object):\n    def reverseStr(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: str\n        \"\"\"\n        s=list(s)\n        left=0\n        while left<len(s):",
+        "detail": "双指针与快慢指针.541.反转字符串II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "双指针与快慢指针.844.比较含退格的字符串",
+        "description": "双指针与快慢指针.844.比较含退格的字符串",
+        "peekOfCode": "class Solution(object):\n    def afterBackspace(self, input_str):\n        str_list = list(input_str)\n        slow = 0\n        for fast in range(len(str_list)):\n            if str_list[fast] != '#':\n                str_list[slow] = str_list[fast]\n                slow += 1\n            else:\n                slow -= 1",
+        "detail": "双指针与快慢指针.844.比较含退格的字符串",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "双指针与快慢指针.977.有序数组的平方",
+        "description": "双指针与快慢指针.977.有序数组的平方",
+        "peekOfCode": "class Solution(object):\n    def sortedSquares(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[int]\n        \"\"\"\n        result = []\n        left, right = 0, len(nums)-1\n        while left <= right:\n            if abs(nums[left]) < abs(nums[right]):",
+        "detail": "双指针与快慢指针.977.有序数组的平方",
         "documentation": {}
     },
     {
@@ -231,6 +294,60 @@
         "description": "基础模拟.LCR146.螺旋遍历二维数组",
         "peekOfCode": "class Solution(object):\n    def spiralArray(self, array):\n        \"\"\"\n        :type array: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        if len(array)==0:\n            return []\n        m,n=len(array),len(array[0])\n        x,y=0,0",
         "detail": "基础模拟.LCR146.螺旋遍历二维数组",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "堆的使用.347.前K个高频元素",
+        "description": "堆的使用.347.前K个高频元素",
+        "peekOfCode": "class Solution(object):\n    def topKFrequent(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        import heapq\n        countDict=dict()\n        for num in nums:",
+        "detail": "堆的使用.347.前K个高频元素",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "栈的使用.1047.删除字符串中的所有相邻重复项",
+        "description": "栈的使用.1047.删除字符串中的所有相邻重复项",
+        "peekOfCode": "class Solution(object):\n    def removeDuplicates(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        from collections import deque\n        stack=deque()\n        for i in range(len(s)):\n            if bool(stack) and stack[-1]==s[i]:",
+        "detail": "栈的使用.1047.删除字符串中的所有相邻重复项",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "栈的使用.150. 逆波兰表达式求值",
+        "description": "栈的使用.150. 逆波兰表达式求值",
+        "peekOfCode": "class Solution(object):\n    def evalRPN(self, tokens):\n        \"\"\"\n        :type tokens: List[str]\n        :rtype: int\n        \"\"\"\n        from collections import deque\n        calculator=[\"+\",\"-\",\"*\",\"/\"]\n        stack=deque()\n        for token in tokens:",
+        "detail": "栈的使用.150. 逆波兰表达式求值",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "栈的使用.20.有效的括号",
+        "description": "栈的使用.20.有效的括号",
+        "peekOfCode": "class Solution(object):\n    def isValid(self, s):\n        from collections import deque\n        \"\"\"\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        mapDict=dict()\n        mapDict[')'] = '('\n        mapDict['}'] = '{'",
+        "detail": "栈的使用.20.有效的括号",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "滑动窗口.滑窗+单调栈.239.滑动窗口最大值",
+        "description": "滑动窗口.滑窗+单调栈.239.滑动窗口最大值",
+        "peekOfCode": "class Solution(object):\n    def maxSlidingWindow(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        from collections import deque\n        deque=deque()\n        left,right=0,0",
+        "detail": "滑动窗口.滑窗+单调栈.239.滑动窗口最大值",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "滑动窗口.滑窗+单调栈.239.滑动窗口最大值",
+        "description": "滑动窗口.滑窗+单调栈.239.滑动窗口最大值",
+        "peekOfCode": "class Solution(object):\n    def maxSlidingWindow(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        from collections import deque\n        deque = deque()\n        left, right = 0, 0",
+        "detail": "滑动窗口.滑窗+单调栈.239.滑动窗口最大值",
         "documentation": {}
     },
     {
