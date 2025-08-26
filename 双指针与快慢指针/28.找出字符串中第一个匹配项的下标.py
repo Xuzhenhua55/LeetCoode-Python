@@ -19,3 +19,5 @@ class Solution(object):
             if matched:
                 return left
         return -1
+
+# TODO：使用KMP算法完成该题
