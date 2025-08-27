@@ -65,6 +65,42 @@
     {
         "label": "TreeNode",
         "kind": 6,
+        "importPath": "二叉树.100.相同的树",
+        "description": "二叉树.100.相同的树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def isSameTree(self, p, q):\n        \"\"\"\n        :type p: Optional[TreeNode]\n        :type q: Optional[TreeNode]",
+        "detail": "二叉树.100.相同的树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.100.相同的树",
+        "description": "二叉树.100.相同的树",
+        "peekOfCode": "class Solution(object):\n    def isSameTree(self, p, q):\n        \"\"\"\n        :type p: Optional[TreeNode]\n        :type q: Optional[TreeNode]\n        :rtype: bool\n        \"\"\"\n        if not p and not q:\n            return True\n        if (p and not q) or (q and not p):",
+        "detail": "二叉树.100.相同的树",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.101.对称二叉树",
+        "description": "二叉树.101.对称二叉树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def isSymmetric(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: bool",
+        "detail": "二叉树.101.对称二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.101.对称二叉树",
+        "description": "二叉树.101.对称二叉树",
+        "peekOfCode": "class Solution(object):\n    def isSymmetric(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: bool\n        \"\"\"\n        if root==None:\n            return True\n        def isEqual(leftNode,rightNode):\n            if (leftNode and not rightNode) or (rightNode and not leftNode):",
+        "detail": "二叉树.101.对称二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
         "importPath": "二叉树.102.二叉树的层序遍历",
         "description": "二叉树.102.二叉树的层序遍历",
         "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def levelOrder(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[List[int]]",
@@ -218,6 +254,42 @@
     {
         "label": "TreeNode",
         "kind": 6,
+        "importPath": "二叉树.222.完全二叉树的节点个数",
+        "description": "二叉树.222.完全二叉树的节点个数",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def countNodes(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int",
+        "detail": "二叉树.222.完全二叉树的节点个数",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.222.完全二叉树的节点个数",
+        "description": "二叉树.222.完全二叉树的节点个数",
+        "peekOfCode": "class Solution(object):\n    def countNodes(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int\n        \"\"\"\n        if root==None: return 0\n        leftDepth,rightDepth=0,0\n        left,right=root.left,root.right\n        while left:",
+        "detail": "二叉树.222.完全二叉树的节点个数",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.226.翻转二叉树",
+        "description": "二叉树.226.翻转二叉树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def invertTree(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: Optional[TreeNode]",
+        "detail": "二叉树.226.翻转二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.226.翻转二叉树",
+        "description": "二叉树.226.翻转二叉树",
+        "peekOfCode": "class Solution(object):\n    def invertTree(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        if not root: return None\n        leftNode,rightNode=None,None\n        if root.left: \n            self.invertTree(root.left)",
+        "detail": "二叉树.226.翻转二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
         "importPath": "二叉树.515.在每个树行中找最大值",
         "description": "二叉树.515.在每个树行中找最大值",
         "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def largestValues(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[int]",
@@ -231,6 +303,24 @@
         "description": "二叉树.515.在每个树行中找最大值",
         "peekOfCode": "class Solution(object):\n    def largestValues(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[int]\n        \"\"\"\n        from collections import deque\n        deque=deque()\n        resultList=[]\n        if root:deque.append(root)",
         "detail": "二叉树.515.在每个树行中找最大值",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.572.另一棵树的子树",
+        "description": "二叉树.572.另一棵树的子树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def isEqual(self,p,q):\n        if (p and not q) or (not p and q): return False\n        if not p and not q: return True\n        return p.val==q.val and self.isEqual(p.left,q.left) and self.isEqual(p.right,q.right)",
+        "detail": "二叉树.572.另一棵树的子树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.572.另一棵树的子树",
+        "description": "二叉树.572.另一棵树的子树",
+        "peekOfCode": "class Solution(object):\n    def isEqual(self,p,q):\n        if (p and not q) or (not p and q): return False\n        if not p and not q: return True\n        return p.val==q.val and self.isEqual(p.left,q.left) and self.isEqual(p.right,q.right)\n    def isSubtree(self, root, subRoot):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type subRoot: Optional[TreeNode]\n        :rtype: bool",
+        "detail": "二叉树.572.另一棵树的子树",
         "documentation": {}
     },
     {
