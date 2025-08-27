@@ -283,7 +283,7 @@
         "kind": 6,
         "importPath": "二叉树.226.翻转二叉树",
         "description": "二叉树.226.翻转二叉树",
-        "peekOfCode": "class Solution(object):\n    def invertTree(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        if not root: return None\n        leftNode,rightNode=None,None\n        if root.left: \n            self.invertTree(root.left)",
+        "peekOfCode": "class Solution(object):\n    def invertTree(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        if not root: return None\n        leftNode,rightNode=None,None\n        if root.left: \n            leftNode=self.invertTree(root.left)",
         "detail": "二叉树.226.翻转二叉树",
         "documentation": {}
     },
