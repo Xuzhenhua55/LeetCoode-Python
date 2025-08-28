@@ -137,6 +137,24 @@
     {
         "label": "TreeNode",
         "kind": 6,
+        "importPath": "二叉树.106.从中序与后序遍历序列构造二叉树",
+        "description": "二叉树.106.从中序与后序遍历序列构造二叉树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def buildTree(self, inorder, postorder):\n        \"\"\"\n        :type inorder: List[int]\n        :type postorder: List[int]",
+        "detail": "二叉树.106.从中序与后序遍历序列构造二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.106.从中序与后序遍历序列构造二叉树",
+        "description": "二叉树.106.从中序与后序遍历序列构造二叉树",
+        "peekOfCode": "class Solution(object):\n    def buildTree(self, inorder, postorder):\n        \"\"\"\n        :type inorder: List[int]\n        :type postorder: List[int]\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        def buildTree(inorder,postorder,inLeft,inRight,postLeft,postRight):\n            if inLeft>inRight or postLeft>postRight:\n                return None",
+        "detail": "二叉树.106.从中序与后序遍历序列构造二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
         "importPath": "二叉树.107.二叉树的层序遍历II",
         "description": "二叉树.107.二叉树的层序遍历II",
         "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def levelOrderBottom(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[List[int]]",
@@ -153,12 +171,48 @@
         "documentation": {}
     },
     {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.110.平衡二叉树",
+        "description": "二叉树.110.平衡二叉树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def isBalanced(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: bool",
+        "detail": "二叉树.110.平衡二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.110.平衡二叉树",
+        "description": "二叉树.110.平衡二叉树",
+        "peekOfCode": "class Solution(object):\n    def isBalanced(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: bool\n        \"\"\"\n        def getHeight(root):\n            if not root: return 0\n            return max(getHeight(root.left),getHeight(root.right))+1\n        if not root or (not root.left and not root.right): return True",
+        "detail": "二叉树.110.平衡二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.110.平衡二叉树",
+        "description": "二叉树.110.平衡二叉树",
+        "peekOfCode": "class Solution(object):\n    def isBalanced(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: bool\n        \"\"\"\n        self.isBalanced=True\n        def DFS(root):\n            if not root: return 0\n            if not self.isBalanced:",
+        "detail": "二叉树.110.平衡二叉树",
+        "documentation": {}
+    },
+    {
         "label": "Solution",
         "kind": 6,
         "importPath": "二叉树.111.二叉树的最小深度",
         "description": "二叉树.111.二叉树的最小深度",
         "peekOfCode": "class Solution(object):\n    def minDepth(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int\n        \"\"\"\n        if root==None:\n            return 0\n        def getHeight(root):\n            if root.left!=None and root.right!=None:",
         "detail": "二叉树.111.二叉树的最小深度",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.112.路径总和",
+        "description": "二叉树.112.路径总和",
+        "peekOfCode": "class Solution(object):\n    def hasPathSum(self, root, targetSum):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type targetSum: int\n        :rtype: bool\n        \"\"\"\n        self.hasPathSum=False\n        def DFS(root,targetSum,curSum):\n            if self.hasPathSum:",
+        "detail": "二叉树.112.路径总和",
         "documentation": {}
     },
     {
@@ -290,6 +344,60 @@
     {
         "label": "TreeNode",
         "kind": 6,
+        "importPath": "二叉树.257.二叉树的所有路径",
+        "description": "二叉树.257.二叉树的所有路径",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def binaryTreePaths(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[str]",
+        "detail": "二叉树.257.二叉树的所有路径",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.257.二叉树的所有路径",
+        "description": "二叉树.257.二叉树的所有路径",
+        "peekOfCode": "class Solution(object):\n    def binaryTreePaths(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[str]\n        \"\"\"\n        self.resultList=[]\n        def DFS(root,curPath):\n            curPath.append(str(root.val))\n            if not root.left and not root.right:",
+        "detail": "二叉树.257.二叉树的所有路径",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.404.左叶子之和",
+        "description": "二叉树.404.左叶子之和",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def sumOfLeftLeaves(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int",
+        "detail": "二叉树.404.左叶子之和",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.404.左叶子之和",
+        "description": "二叉树.404.左叶子之和",
+        "peekOfCode": "class Solution(object):\n    def sumOfLeftLeaves(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int\n        \"\"\"\n        self.resultVal=0\n        def DFS(root,direction):\n            if not root.left and not root.right and direction=='left':\n                self.resultVal += root.val",
+        "detail": "二叉树.404.左叶子之和",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.513.找树左下角的值",
+        "description": "二叉树.513.找树左下角的值",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def findBottomLeftValue(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int",
+        "detail": "二叉树.513.找树左下角的值",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.513.找树左下角的值",
+        "description": "二叉树.513.找树左下角的值",
+        "peekOfCode": "class Solution(object):\n    def findBottomLeftValue(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int\n        \"\"\"\n        from collections import deque\n        deque=deque()\n        lastNode=root\n        deque.append(lastNode)",
+        "detail": "二叉树.513.找树左下角的值",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
         "importPath": "二叉树.515.在每个树行中找最大值",
         "description": "二叉树.515.在每个树行中找最大值",
         "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def largestValues(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[int]",
@@ -326,6 +434,24 @@
     {
         "label": "TreeNode",
         "kind": 6,
+        "importPath": "二叉树.617.合并二叉树",
+        "description": "二叉树.617.合并二叉树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def mergeTrees(self, root1, root2):\n        \"\"\"\n        :type root1: Optional[TreeNode]\n        :type root2: Optional[TreeNode]",
+        "detail": "二叉树.617.合并二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.617.合并二叉树",
+        "description": "二叉树.617.合并二叉树",
+        "peekOfCode": "class Solution(object):\n    def mergeTrees(self, root1, root2):\n        \"\"\"\n        :type root1: Optional[TreeNode]\n        :type root2: Optional[TreeNode]\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        if not root1 and not root2:\n            return None\n        if root1 and not root2:",
+        "detail": "二叉树.617.合并二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
         "importPath": "二叉树.637.二叉树的层平均值",
         "description": "二叉树.637.二叉树的层平均值",
         "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def averageOfLevels(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[float]",
@@ -339,6 +465,33 @@
         "description": "二叉树.637.二叉树的层平均值",
         "peekOfCode": "class Solution(object):\n    def averageOfLevels(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[float]\n        \"\"\"\n        from collections import deque\n        deque=deque()\n        resultList=[]\n        if root: deque.append(root)",
         "detail": "二叉树.637.二叉树的层平均值",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.654.最大二叉树",
+        "description": "二叉树.654.最大二叉树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def constructMaximumBinaryTree(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: Optional[TreeNode]",
+        "detail": "二叉树.654.最大二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.654.最大二叉树",
+        "description": "二叉树.654.最大二叉树",
+        "peekOfCode": "class Solution(object):\n    def constructMaximumBinaryTree(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        def buildTree(nums,left,right):\n            if left>right:\n                return None\n            maxVal,maxIndex=float(\"-inf\"),-1",
+        "detail": "二叉树.654.最大二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.700.二叉搜索树中的搜索",
+        "description": "二叉树.700.二叉搜索树中的搜索",
+        "peekOfCode": "class Solution(object):\n    def searchBST(self, root, val):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type val: int\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        if not root:\n            return None\n        if root.val==val:",
+        "detail": "二叉树.700.二叉搜索树中的搜索",
         "documentation": {}
     },
     {
