@@ -63,6 +63,123 @@
         "documentation": {}
     },
     {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.235.二叉搜索树的最近公共祖先",
+        "description": "二叉树.二叉搜索树.235.二叉搜索树的最近公共祖先",
+        "peekOfCode": "class Solution(object):\n    def lowestCommonAncestor(self, root, p, q):\n        \"\"\"\n        :type root: TreeNode\n        :type p: TreeNode\n        :type q: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n        if not root: return None\n        if root and root==p or root==q:",
+        "detail": "二叉树.二叉搜索树.235.二叉搜索树的最近公共祖先",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.450.删除二叉搜索树中的节点",
+        "description": "二叉树.二叉搜索树.450.删除二叉搜索树中的节点",
+        "peekOfCode": "class Solution(object):\n    def deleteNode(self, root, key):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type key: int\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        if not root: return None\n        if root.val==key:\n            if not root.right: return root.left",
+        "detail": "二叉树.二叉搜索树.450.删除二叉搜索树中的节点",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.501.二叉搜索树中的众数",
+        "description": "二叉树.二叉搜索树.501.二叉搜索树中的众数",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def findMode(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[int]",
+        "detail": "二叉树.二叉搜索树.501.二叉搜索树中的众数",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.501.二叉搜索树中的众数",
+        "description": "二叉树.二叉搜索树.501.二叉搜索树中的众数",
+        "peekOfCode": "class Solution(object):\n    def findMode(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[int]\n        \"\"\"\n        self.preVal=None\n        self.curCount=0\n        self.maxCount=-float('inf')\n        self.resultList=[]",
+        "detail": "二叉树.二叉搜索树.501.二叉搜索树中的众数",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.530.二叉搜索树的最小绝对差",
+        "description": "二叉树.二叉搜索树.530.二叉搜索树的最小绝对差",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def getMinimumDifference(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int",
+        "detail": "二叉树.二叉搜索树.530.二叉搜索树的最小绝对差",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.530.二叉搜索树的最小绝对差",
+        "description": "二叉树.二叉搜索树.530.二叉搜索树的最小绝对差",
+        "peekOfCode": "class Solution(object):\n    def getMinimumDifference(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int\n        \"\"\"\n        self.preVal=None\n        self.result=float('inf')\n        def DFS(root):\n            if not root: return",
+        "detail": "二叉树.二叉搜索树.530.二叉搜索树的最小绝对差",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.700.二叉搜索树中的搜索",
+        "description": "二叉树.二叉搜索树.700.二叉搜索树中的搜索",
+        "peekOfCode": "class Solution(object):\n    def searchBST(self, root, val):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type val: int\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        if not root:\n            return None\n        if root.val==val:",
+        "detail": "二叉树.二叉搜索树.700.二叉搜索树中的搜索",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.701.二叉搜索树中的插入操作",
+        "description": "二叉树.二叉搜索树.701.二叉搜索树中的插入操作",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def insertIntoBST(self, root, val):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type val: int",
+        "detail": "二叉树.二叉搜索树.701.二叉搜索树中的插入操作",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.701.二叉搜索树中的插入操作",
+        "description": "二叉树.二叉搜索树.701.二叉搜索树中的插入操作",
+        "peekOfCode": "class Solution(object):\n    def insertIntoBST(self, root, val):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type val: int\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        if not root:\n            return TreeNode(val)\n        if val < root.val:",
+        "detail": "二叉树.二叉搜索树.701.二叉搜索树中的插入操作",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "description": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def isValidBST(self, root):\n        def dfs(node):\n            if not node:\n                return True, float(\"inf\"), float(\"-inf\")",
+        "detail": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "description": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "peekOfCode": "class Solution(object):\n    def isValidBST(self, root):\n        def dfs(node):\n            if not node:\n                return True, float(\"inf\"), float(\"-inf\")\n            leftValid, leftMin, leftMax = dfs(node.left)\n            rightValid, rightMin, rightMax = dfs(node.right)\n            if not leftValid or not rightValid:\n                return False, 0, 0\n            if not (leftMax < node.val < rightMin):",
+        "detail": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "description": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "peekOfCode": "class Solution(object):\n    def isValidBST(self, root):\n        self.preNode=None\n        def DFS(root):\n            if not root: return True\n            if not DFS(root.left):\n                return False\n            if self.preNode and root.val <= self.preNode.val:\n                return False\n            self.preNode = root",
+        "detail": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "description": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "peekOfCode": "class Solution(object):\n    def isValidBST(self, root):\n        self.preNode = None\n        self.isValid = True\n        def DFS(root):\n            if not root or not self.isValid:\n                return\n            DFS(root.left)\n            if self.preNode and root.val <= self.preNode.val:\n                self.isValid=False",
+        "detail": "二叉树.二叉搜索树.98.验证二叉搜索树",
+        "documentation": {}
+    },
+    {
         "label": "TreeNode",
         "kind": 6,
         "importPath": "二叉树.100.相同的树",
@@ -344,6 +461,33 @@
     {
         "label": "TreeNode",
         "kind": 6,
+        "importPath": "二叉树.236.二叉树的最近公共祖先",
+        "description": "二叉树.236.二叉树的最近公共祖先",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, x):\n        self.val = x\n        self.left = None\n        self.right = None\nclass Solution(object):\n    def lowestCommonAncestor(self, root, p, q):\n        \"\"\"\n        :type root: TreeNode\n        :type p: TreeNode",
+        "detail": "二叉树.236.二叉树的最近公共祖先",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.236.二叉树的最近公共祖先",
+        "description": "二叉树.236.二叉树的最近公共祖先",
+        "peekOfCode": "class Solution(object):\n    def lowestCommonAncestor(self, root, p, q):\n        \"\"\"\n        :type root: TreeNode\n        :type p: TreeNode\n        :type q: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n        self.result=None\n        def DFS(root,p,q):",
+        "detail": "二叉树.236.二叉树的最近公共祖先",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.236.二叉树的最近公共祖先",
+        "description": "二叉树.236.二叉树的最近公共祖先",
+        "peekOfCode": "class Solution(object):\n    def lowestCommonAncestor(self, root, p, q):\n        \"\"\"\n        :type root: TreeNode\n        :type p: TreeNode\n        :type q: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n        if not root: return None\n        if root==p or root==q:",
+        "detail": "二叉树.236.二叉树的最近公共祖先",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
         "importPath": "二叉树.257.二叉树的所有路径",
         "description": "二叉树.257.二叉树的所有路径",
         "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def binaryTreePaths(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: List[str]",
@@ -483,15 +627,6 @@
         "description": "二叉树.654.最大二叉树",
         "peekOfCode": "class Solution(object):\n    def constructMaximumBinaryTree(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        def buildTree(nums,left,right):\n            if left>right:\n                return None\n            maxVal,maxIndex=float(\"-inf\"),-1",
         "detail": "二叉树.654.最大二叉树",
-        "documentation": {}
-    },
-    {
-        "label": "Solution",
-        "kind": 6,
-        "importPath": "二叉树.700.二叉搜索树中的搜索",
-        "description": "二叉树.700.二叉搜索树中的搜索",
-        "peekOfCode": "class Solution(object):\n    def searchBST(self, root, val):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type val: int\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        if not root:\n            return None\n        if root.val==val:",
-        "detail": "二叉树.700.二叉搜索树中的搜索",
         "documentation": {}
     },
     {
