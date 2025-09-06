@@ -63,6 +63,24 @@
         "documentation": {}
     },
     {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.108.将有序数组转换为二叉搜索树",
+        "description": "二叉树.二叉搜索树.108.将有序数组转换为二叉搜索树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def sortedArrayToBST(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: Optional[TreeNode]",
+        "detail": "二叉树.二叉搜索树.108.将有序数组转换为二叉搜索树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.108.将有序数组转换为二叉搜索树",
+        "description": "二叉树.二叉搜索树.108.将有序数组转换为二叉搜索树",
+        "peekOfCode": "class Solution(object):\n    def sortedArrayToBST(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        def createNode(nums, left, right):\n            if left > right: return None\n            midIndex = left + (right - left) / 2\n            curNode = TreeNode(nums[midIndex])",
+        "detail": "二叉树.二叉搜索树.108.将有序数组转换为二叉搜索树",
+        "documentation": {}
+    },
+    {
         "label": "Solution",
         "kind": 6,
         "importPath": "二叉树.二叉搜索树.235.二叉搜索树的最近公共祖先",
@@ -114,6 +132,33 @@
         "description": "二叉树.二叉搜索树.530.二叉搜索树的最小绝对差",
         "peekOfCode": "class Solution(object):\n    def getMinimumDifference(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int\n        \"\"\"\n        self.preVal=None\n        self.result=float('inf')\n        def DFS(root):\n            if not root: return",
         "detail": "二叉树.二叉搜索树.530.二叉搜索树的最小绝对差",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.538.把二叉搜索树转换为累加树",
+        "description": "二叉树.二叉搜索树.538.把二叉搜索树转换为累加树",
+        "peekOfCode": "class Solution(object):\n    def convertBST(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        self.curSum = 0\n        def DFS(root):\n            if root == None: return 0\n            DFS(root.right)",
+        "detail": "二叉树.二叉搜索树.538.把二叉搜索树转换为累加树",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.669.修剪二叉搜索树",
+        "description": "二叉树.二叉搜索树.669.修剪二叉搜索树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\nclass Solution(object):\n    def trimBST(self, root, low, high):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type low: int",
+        "detail": "二叉树.二叉搜索树.669.修剪二叉搜索树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "二叉树.二叉搜索树.669.修剪二叉搜索树",
+        "description": "二叉树.二叉搜索树.669.修剪二叉搜索树",
+        "peekOfCode": "class Solution(object):\n    def trimBST(self, root, low, high):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :type low: int\n        :type high: int\n        :rtype: Optional[TreeNode]\n        \"\"\"\n        if root == None: return None\n        if root.val > high or root.val < low:",
+        "detail": "二叉树.二叉搜索树.669.修剪二叉搜索树",
         "documentation": {}
     },
     {
@@ -834,6 +879,33 @@
         "description": "哈希表.49.字母异位词分组",
         "peekOfCode": "class Solution(object):\n    def groupAnagrams(self, strs):\n        \"\"\"\n        :type strs: List[str]\n        :rtype: List[List[str]]\n        \"\"\"\n        str_dict=dict()\n        for str in strs:\n            sortedStr=''.join(sorted(str))\n            if sortedStr not in str_dict:",
         "detail": "哈希表.49.字母异位词分组",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.17.电话号码的字母组合",
+        "description": "回溯.17.电话号码的字母组合",
+        "peekOfCode": "class Solution(object):\n    def initNumberDict(self):\n        self.numberDict = {\n            '2': ['a', 'b', 'c'],\n            '3': ['d', 'e', 'f'],\n            '4': ['g', 'h', 'i'],\n            '5': ['j', 'k', 'l'],\n            '6': ['m', 'n', 'o'],\n            '7': ['p', 'q', 'r', 's'],\n            '8': ['t', 'u', 'v'],",
+        "detail": "回溯.17.电话号码的字母组合",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.216.组合总和III",
+        "description": "回溯.216.组合总和III",
+        "peekOfCode": "class Solution(object):\n    def combinationSum3(self, k, n):\n        \"\"\"\n        :type k: int\n        :type n: int\n        :rtype: List[List[int]]\n        \"\"\"\n        self.resultList = []\n        self.curList = []\n        self.curSum = 0",
+        "detail": "回溯.216.组合总和III",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.77.组合",
+        "description": "回溯.77.组合",
+        "peekOfCode": "class Solution(object):\n    def combine(self, n, k):\n        \"\"\"\n        :type n: int\n        :type k: int\n        :rtype: List[List[int]]\n        \"\"\"\n        self.resultList = []\n        self.curList = []\n        def DFS(start, end):",
+        "detail": "回溯.77.组合",
         "documentation": {}
     },
     {
