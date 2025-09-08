@@ -1,5 +1,13 @@
 [
     {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
         "label": "Solution",
         "kind": 6,
         "importPath": "二分法.34.在排序数组中查找元素的第一个和最后一个位置",
@@ -884,6 +892,42 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "回溯.131.分割回文串",
+        "description": "回溯.131.分割回文串",
+        "peekOfCode": "class Solution(object):\n    def partition(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[List[str]]\n        \"\"\"\n        self.resultList = []\n        self.curList = []\n        def isHuiWen(str):\n            left, right = 0, len(str) - 1",
+        "detail": "回溯.131.分割回文串",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.131.分割回文串",
+        "description": "回溯.131.分割回文串",
+        "peekOfCode": "class Solution(object):\n    def partition(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[List[str]]\n        \"\"\"\n        self.resultList = []\n        self.curList = []\n        def isHuiWen(str):\n            left, right = 0, len(str) - 1",
+        "detail": "回溯.131.分割回文串",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.131.分割回文串",
+        "description": "回溯.131.分割回文串",
+        "peekOfCode": "class Solution(object):\n    def partition(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[List[str]]\n        \"\"\"\n        self.resultList = []\n        self.curList = []\n        def isHuiWen(str):\n            left, right = 0, len(str) - 1",
+        "detail": "回溯.131.分割回文串",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.17.电话号码的字母组合",
+        "description": "回溯.17.电话号码的字母组合",
+        "peekOfCode": "class Solution(object):\n    def initNumberDict(self):\n        self.numberDict = {\n            '2': ['a', 'b', 'c'],\n            '3': ['d', 'e', 'f'],\n            '4': ['g', 'h', 'i'],\n            '5': ['j', 'k', 'l'],\n            '6': ['m', 'n', 'o'],\n            '7': ['p', 'q', 'r', 's'],\n            '8': ['t', 'u', 'v'],",
+        "detail": "回溯.17.电话号码的字母组合",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "回溯.17.电话号码的字母组合",
         "description": "回溯.17.电话号码的字母组合",
         "peekOfCode": "class Solution(object):\n    def initNumberDict(self):\n        self.numberDict = {\n            '2': ['a', 'b', 'c'],\n            '3': ['d', 'e', 'f'],\n            '4': ['g', 'h', 'i'],\n            '5': ['j', 'k', 'l'],\n            '6': ['m', 'n', 'o'],\n            '7': ['p', 'q', 'r', 's'],\n            '8': ['t', 'u', 'v'],",
@@ -902,10 +946,64 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "回溯.39.组合总和",
+        "description": "回溯.39.组合总和",
+        "peekOfCode": "class Solution(object):\n    def combinationSum(self, candidates, target):\n        \"\"\"\n        :type candidates: List[int]\n        :type target: int\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.curSum = 0\n        self.resultList = []",
+        "detail": "回溯.39.组合总和",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.40.组合总和II",
+        "description": "回溯.40.组合总和II",
+        "peekOfCode": "class Solution(object):\n    def combinationSum2(self, candidates, target):\n        \"\"\"\n        :type candidates: List[int]\n        :type target: int\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.curSum = 0\n        self.resultList = []",
+        "detail": "回溯.40.组合总和II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.491.非递减子序列",
+        "description": "回溯.491.非递减子序列",
+        "peekOfCode": "class Solution(object):\n    def findSubsequences(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.resultList = []\n        def DFS(start):\n            if len(self.curList) >= 2:",
+        "detail": "回溯.491.非递减子序列",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "回溯.77.组合",
         "description": "回溯.77.组合",
         "peekOfCode": "class Solution(object):\n    def combine(self, n, k):\n        \"\"\"\n        :type n: int\n        :type k: int\n        :rtype: List[List[int]]\n        \"\"\"\n        self.resultList = []\n        self.curList = []\n        def DFS(start, end):",
         "detail": "回溯.77.组合",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.78.子集",
+        "description": "回溯.78.子集",
+        "peekOfCode": "class Solution(object):\n    def subsets(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.resultList = []\n        def DFS(start):\n            self.resultList.append(list(self.curList))",
+        "detail": "回溯.78.子集",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.90.子集II",
+        "description": "回溯.90.子集II",
+        "peekOfCode": "class Solution(object):\n    def subsetsWithDup(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.resultList = []\n        nums.sort()\n        def DFS(start):",
+        "detail": "回溯.90.子集II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.93.复原IP地址",
+        "description": "回溯.93.复原IP地址",
+        "peekOfCode": "class Solution(object):\n    def restoreIpAddresses(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[str]\n        \"\"\"\n        self.curList = []\n        self.resultList = []\n        def isValid(str):\n            if str[0] == '0' and len(str) > 1: return False",
+        "detail": "回溯.93.复原IP地址",
         "documentation": {}
     },
     {
