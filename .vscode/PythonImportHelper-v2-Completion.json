@@ -946,6 +946,24 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "回溯.332.重新安排行程",
+        "description": "回溯.332.重新安排行程",
+        "peekOfCode": "class Solution(object):\n    def findItinerary(self, tickets):\n        \"\"\"\n        :type tickets: List[List[str]]\n        :rtype: List[str]\n        \"\"\"\n        self.graghDict = dict()\n        self.traversedPathDict = dict()\n        for ticket in tickets:\n            if ticket[0] not in self.graghDict:",
+        "detail": "回溯.332.重新安排行程",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.332.重新安排行程",
+        "description": "回溯.332.重新安排行程",
+        "peekOfCode": "class Solution(object):\n    def findItinerary(self, tickets):\n        \"\"\"\n        :type tickets: List[List[str]]\n        :rtype: List[str]\n        \"\"\"\n        from collections import defaultdict\n        self.graghDict = defaultdict(list)\n        self.traversedPathDict = defaultdict(int)\n        for ticket in tickets:",
+        "detail": "回溯.332.重新安排行程",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "回溯.39.组合总和",
         "description": "回溯.39.组合总和",
         "peekOfCode": "class Solution(object):\n    def combinationSum(self, candidates, target):\n        \"\"\"\n        :type candidates: List[int]\n        :type target: int\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.curSum = 0\n        self.resultList = []",
@@ -959,6 +977,24 @@
         "description": "回溯.40.组合总和II",
         "peekOfCode": "class Solution(object):\n    def combinationSum2(self, candidates, target):\n        \"\"\"\n        :type candidates: List[int]\n        :type target: int\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.curSum = 0\n        self.resultList = []",
         "detail": "回溯.40.组合总和II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.46.全排列",
+        "description": "回溯.46.全排列",
+        "peekOfCode": "class Solution(object):\n    def permute(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.resultList = []\n        self.pathSet = set()\n        def DFS():",
+        "detail": "回溯.46.全排列",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.47.全排列II",
+        "description": "回溯.47.全排列II",
+        "peekOfCode": "class Solution(object):\n    def permuteUnique(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.resultList = []\n        self.pathExisted = [False] * len(nums)\n        def DFS():",
+        "detail": "回溯.47.全排列II",
         "documentation": {}
     },
     {
