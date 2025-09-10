@@ -964,6 +964,24 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "回溯.37.解数独",
+        "description": "回溯.37.解数独",
+        "peekOfCode": "class Solution(object):\n    def solveSudoku(self, board):\n        \"\"\"\n        :type board: List[List[str]]\n        :rtype: None Do not return anything, modify board in-place instead.\n        \"\"\"\n        def calChunkIndex(row, column):\n            return (row // 3) * 3 + (column // 3)\n        from collections import defaultdict\n        self.rowUnexistedDict = defaultdict(lambda: set(range(1, 10)))",
+        "detail": "回溯.37.解数独",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.37.解数独",
+        "description": "回溯.37.解数独",
+        "peekOfCode": "class Solution(object):\n    def solveSudoku(self, board):\n        \"\"\"\n        :type board: List[List[str]]\n        :rtype: None Do not return anything, modify board in-place instead.\n        \"\"\"\n        def calChunkIndex(row, column):\n            return (row // 3) * 3 + (column // 3)\n        from collections import defaultdict\n        self.rowUnexistedDict = defaultdict(lambda: set(range(1, 10)))",
+        "detail": "回溯.37.解数独",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "回溯.39.组合总和",
         "description": "回溯.39.组合总和",
         "peekOfCode": "class Solution(object):\n    def combinationSum(self, candidates, target):\n        \"\"\"\n        :type candidates: List[int]\n        :type target: int\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.curSum = 0\n        self.resultList = []",
@@ -1004,6 +1022,15 @@
         "description": "回溯.491.非递减子序列",
         "peekOfCode": "class Solution(object):\n    def findSubsequences(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        self.curList = []\n        self.resultList = []\n        def DFS(start):\n            if len(self.curList) >= 2:",
         "detail": "回溯.491.非递减子序列",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "回溯.51.N皇后",
+        "description": "回溯.51.N皇后",
+        "peekOfCode": "class Solution(object):\n    def solveNQueens(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[List[str]]\n        \"\"\"\n        self.matrix = [['.' for _ in range(n)] for _ in range(n)]\n        self.resultList = []\n        def isValid(row, column):\n            for i in range(1, n):",
+        "detail": "回溯.51.N皇后",
         "documentation": {}
     },
     {
@@ -1175,6 +1202,78 @@
         "description": "滑动窗口.209.长度最小的子数组",
         "peekOfCode": "class Solution(object):\n    def minSubArrayLen(self, target, nums):\n        \"\"\"\n        :type target: int\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        windowValue=0\n        left,right=0,0\n        result=float('inf')",
         "detail": "滑动窗口.209.长度最小的子数组",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.122.买卖股票的最佳时机II",
+        "description": "贪心.122.买卖股票的最佳时机II",
+        "peekOfCode": "class Solution(object):\n    def maxProfit(self, prices):\n        \"\"\"\n        :type prices: List[int]\n        :rtype: int\n        \"\"\"\n        sum = 0\n        for i in range(0, len(prices)):\n            if i > 0 and prices[i] > prices[i - 1]:\n                sum += prices[i] - prices[i - 1]",
+        "detail": "贪心.122.买卖股票的最佳时机II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.376.摆动序列",
+        "description": "贪心.376.摆动序列",
+        "peekOfCode": "class Solution(object):\n    def wiggleMaxLength(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        isUp = None\n        result = 1\n        for i in range(1, len(nums)):\n            if isUp != False and nums[i] < nums[i - 1]:",
+        "detail": "贪心.376.摆动序列",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.45.跳跃游戏II",
+        "description": "贪心.45.跳跃游戏II",
+        "peekOfCode": "class Solution(object):\n    def jump(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        if len(nums) == 1: return 0\n        left, maxRight = 0, 0\n        step = 0\n        while True:",
+        "detail": "贪心.45.跳跃游戏II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.455.分发饼干",
+        "description": "贪心.455.分发饼干",
+        "peekOfCode": "class Solution(object):\n    def findContentChildren(self, g, s):\n        \"\"\"\n        :type g: List[int]\n        :type s: List[int]\n        :rtype: int\n        \"\"\"\n        g.sort(key=lambda x: -x)\n        s.sort(key=lambda x: -x)\n        sum = 0",
+        "detail": "贪心.455.分发饼干",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.455.分发饼干",
+        "description": "贪心.455.分发饼干",
+        "peekOfCode": "class Solution(object):\n    def findContentChildren(self, g, s):\n        \"\"\"\n        :type g: List[int]\n        :type s: List[int]\n        :rtype: int\n        \"\"\"\n        g.sort(key=lambda x: -x)\n        s.sort(key=lambda x: -x)\n        i = j = sum = 0",
+        "detail": "贪心.455.分发饼干",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.53.最大子数组和",
+        "description": "贪心.53.最大子数组和",
+        "peekOfCode": "class Solution(object):\n    def maxSubArray(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        curSum = 0\n        result = -float('inf')\n        for i in range(0, len(nums)):\n            if nums[i] >= 0:",
+        "detail": "贪心.53.最大子数组和",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.53.最大子数组和",
+        "description": "贪心.53.最大子数组和",
+        "peekOfCode": "class Solution(object):\n    def maxSubArray(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        curSum = 0\n        result = -float('inf')\n        for i in range(0, len(nums)):\n            curSum += nums[i]",
+        "detail": "贪心.53.最大子数组和",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.55.跳跃游戏",
+        "description": "贪心.55.跳跃游戏",
+        "peekOfCode": "class Solution(object):\n    def canJump(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: bool\n        \"\"\"\n        maxRight = 0\n        for i in range(0, len(nums) - 1):\n            if i <= maxRight:\n                maxRight = max(maxRight, i + nums[i])",
+        "detail": "贪心.55.跳跃游戏",
         "documentation": {}
     },
     {
