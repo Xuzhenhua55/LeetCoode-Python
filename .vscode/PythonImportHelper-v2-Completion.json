@@ -1207,10 +1207,46 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "贪心.1005.K次取反后最大化的数组和",
+        "description": "贪心.1005.K次取反后最大化的数组和",
+        "peekOfCode": "class Solution(object):\n    def largestSumAfterKNegations(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        nums.sort()\n        sum = 0\n        for i in range(0, len(nums)):",
+        "detail": "贪心.1005.K次取反后最大化的数组和",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "贪心.122.买卖股票的最佳时机II",
         "description": "贪心.122.买卖股票的最佳时机II",
         "peekOfCode": "class Solution(object):\n    def maxProfit(self, prices):\n        \"\"\"\n        :type prices: List[int]\n        :rtype: int\n        \"\"\"\n        sum = 0\n        for i in range(0, len(prices)):\n            if i > 0 and prices[i] > prices[i - 1]:\n                sum += prices[i] - prices[i - 1]",
         "detail": "贪心.122.买卖股票的最佳时机II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.134.加油站",
+        "description": "贪心.134.加油站",
+        "peekOfCode": "class Solution(object):\n    def canCompleteCircuit(self, gas, cost):\n        \"\"\"\n        :type gas: List[int]\n        :type cost: List[int]\n        :rtype: int\n        \"\"\"\n        minGas = float(\"inf\")\n        sumGas = 0\n        for i in range(0, len(gas)):",
+        "detail": "贪心.134.加油站",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.135.分发糖果",
+        "description": "贪心.135.分发糖果",
+        "peekOfCode": "class Solution(object):\n    def candy(self, ratings):\n        \"\"\"\n        :type ratings: List[int]\n        :rtype: int\n        \"\"\"\n        candiesList = [1] * len(ratings)\n        for i in range(1, len(ratings)):\n            if ratings[i] > ratings[i - 1]:\n                candiesList[i] = candiesList[i - 1] + 1",
+        "detail": "贪心.135.分发糖果",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.135.分发糖果",
+        "description": "贪心.135.分发糖果",
+        "peekOfCode": "class Solution(object):\n    def candy(self, ratings):\n        \"\"\"\n        :type ratings: List[int]\n        :rtype: int\n        \"\"\"\n        candiesList = [1] * len(ratings)\n        for i in range(1, len(ratings)):\n            if ratings[i] > ratings[i - 1]:\n                candiesList[i] = candiesList[i - 1] + 1",
+        "detail": "贪心.135.分发糖果",
         "documentation": {}
     },
     {
@@ -1228,6 +1264,15 @@
         "importPath": "贪心.45.跳跃游戏II",
         "description": "贪心.45.跳跃游戏II",
         "peekOfCode": "class Solution(object):\n    def jump(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        if len(nums) == 1: return 0\n        left, maxRight = 0, 0\n        step = 0\n        while True:",
+        "detail": "贪心.45.跳跃游戏II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.45.跳跃游戏II",
+        "description": "贪心.45.跳跃游戏II",
+        "peekOfCode": "class Solution(object):\n    def jump(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        if len(nums) == 1: return 0\n        curMaxRight = nextMaxRight = step = 0\n        for i in range(len(nums)):\n            nextMaxRight = max(i + nums[i], nextMaxRight)",
         "detail": "贪心.45.跳跃游戏II",
         "documentation": {}
     },
@@ -1274,6 +1319,15 @@
         "description": "贪心.55.跳跃游戏",
         "peekOfCode": "class Solution(object):\n    def canJump(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: bool\n        \"\"\"\n        maxRight = 0\n        for i in range(0, len(nums) - 1):\n            if i <= maxRight:\n                maxRight = max(maxRight, i + nums[i])",
         "detail": "贪心.55.跳跃游戏",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.860.柠檬水找零",
+        "description": "贪心.860.柠檬水找零",
+        "peekOfCode": "class Solution(object):\n    def lemonadeChange(self, bills):\n        \"\"\"\n        :type bills: List[int]\n        :rtype: bool\n        \"\"\"\n        countDict = {5: 0, 10: 0}\n        for bill in bills:\n            if bill == 5:\n                countDict[5] += 1",
+        "detail": "贪心.860.柠檬水找零",
         "documentation": {}
     },
     {
