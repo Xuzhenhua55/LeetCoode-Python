@@ -1261,6 +1261,24 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "贪心.406.根据身高重建队列",
+        "description": "贪心.406.根据身高重建队列",
+        "peekOfCode": "class Solution(object):\n    def reconstructQueue(self, people):\n        \"\"\"\n        :type people: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        queue = []\n        people.sort(key=lambda x: (-x[0], x[1]))\n        for x in people:\n            queue.insert(x[1], x)",
+        "detail": "贪心.406.根据身高重建队列",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.435.无重叠区间",
+        "description": "贪心.435.无重叠区间",
+        "peekOfCode": "class Solution(object):\n    def eraseOverlapIntervals(self, intervals):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :rtype: int\n        \"\"\"\n        intervals.sort(key=lambda x: (x[0], [x[1]]))\n        resultList = []\n        resultCount = 0\n        for interval in intervals:",
+        "detail": "贪心.435.无重叠区间",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "贪心.45.跳跃游戏II",
         "description": "贪心.45.跳跃游戏II",
         "peekOfCode": "class Solution(object):\n    def jump(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        if len(nums) == 1: return 0\n        left, maxRight = 0, 0\n        step = 0\n        while True:",
@@ -1274,6 +1292,15 @@
         "description": "贪心.45.跳跃游戏II",
         "peekOfCode": "class Solution(object):\n    def jump(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        if len(nums) == 1: return 0\n        curMaxRight = nextMaxRight = step = 0\n        for i in range(len(nums)):\n            nextMaxRight = max(i + nums[i], nextMaxRight)",
         "detail": "贪心.45.跳跃游戏II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.452.用最少数量的箭引爆气球",
+        "description": "贪心.452.用最少数量的箭引爆气球",
+        "peekOfCode": "class Solution(object):\n    def findMinArrowShots(self, points):\n        \"\"\"\n        :type points: List[List[int]]\n        :rtype: int\n        \"\"\"\n        points.sort(key=lambda x: x[0])\n        resultList = []\n        for point in points:\n            if not resultList or resultList[-1][1] < point[0]:",
+        "detail": "贪心.452.用最少数量的箭引爆气球",
         "documentation": {}
     },
     {
@@ -1324,10 +1351,82 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "贪心.56.合并区间",
+        "description": "贪心.56.合并区间",
+        "peekOfCode": "class Solution(object):\n    def merge(self, intervals):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        intervals.sort(key=lambda x: x[0])\n        resultList = []\n        for interval in intervals:\n            if not resultList or interval[0] > resultList[-1][1]:",
+        "detail": "贪心.56.合并区间",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.738.单调递增的数字",
+        "description": "贪心.738.单调递增的数字",
+        "peekOfCode": "class Solution(object):\n    def monotoneIncreasingDigits(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        digitList = [int(digit) for digit in str(n)]\n        resultList = [9] * len(digitList)\n        preNumber = -1\n        reverseIndex = -1",
+        "detail": "贪心.738.单调递增的数字",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.738.单调递增的数字",
+        "description": "贪心.738.单调递增的数字",
+        "peekOfCode": "class Solution(object):\n    def monotoneIncreasingDigits(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        digitList = [int(digit) for digit in str(n)]\n        lastUpdate = len(digitList)\n        for i in range(len(digitList) - 1, 0, -1):\n            if digitList[i] < digitList[i - 1]:",
+        "detail": "贪心.738.单调递增的数字",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.763.划分字母区间",
+        "description": "贪心.763.划分字母区间",
+        "peekOfCode": "class Solution(object):\n    def partitionLabels(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[int]\n        \"\"\"\n        from collections import defaultdict\n        countDict = defaultdict(int)\n        resultList = []\n        left = 0",
+        "detail": "贪心.763.划分字母区间",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.763.划分字母区间",
+        "description": "贪心.763.划分字母区间",
+        "peekOfCode": "class Solution(object):\n    def partitionLabels(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[int]\n        \"\"\"\n        intervalDict = dict()\n        for i in range(len(s)):\n            if s[i] not in intervalDict:\n                intervalDict[s[i]] = [i, i]",
+        "detail": "贪心.763.划分字母区间",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.763.划分字母区间",
+        "description": "贪心.763.划分字母区间",
+        "peekOfCode": "class Solution(object):\n    def partitionLabels(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[int]\n        \"\"\"\n        maxRightDct = dict()\n        for i in range(len(s)):\n            maxRightDct[s[i]] = i\n        left = 0",
+        "detail": "贪心.763.划分字母区间",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "贪心.860.柠檬水找零",
         "description": "贪心.860.柠檬水找零",
         "peekOfCode": "class Solution(object):\n    def lemonadeChange(self, bills):\n        \"\"\"\n        :type bills: List[int]\n        :rtype: bool\n        \"\"\"\n        countDict = {5: 0, 10: 0}\n        for bill in bills:\n            if bill == 5:\n                countDict[5] += 1",
         "detail": "贪心.860.柠檬水找零",
+        "documentation": {}
+    },
+    {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "贪心.968.监控二叉树",
+        "description": "贪心.968.监控二叉树",
+        "peekOfCode": "class TreeNode(object):\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n# 每个节点有不同状态：2被覆盖、0未被覆盖、1是摄像头\nclass Solution(object):\n    def minCameraCover(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]",
+        "detail": "贪心.968.监控二叉树",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.968.监控二叉树",
+        "description": "贪心.968.监控二叉树",
+        "peekOfCode": "class Solution(object):\n    def minCameraCover(self, root):\n        \"\"\"\n        :type root: Optional[TreeNode]\n        :rtype: int\n        \"\"\"\n        self.result = 0\n        def dfs(root):\n            if not root: return 2\n            leftStatus = dfs(root.left)",
+        "detail": "贪心.968.监控二叉树",
         "documentation": {}
     },
     {
