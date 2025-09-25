@@ -1261,6 +1261,24 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "贪心.376.摆动序列",
+        "description": "贪心.376.摆动序列",
+        "peekOfCode": "class Solution(object):\n    def wiggleMaxLength(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        status = 1\n        curLength = 1\n        result = 1\n        for i in range(1, len(nums), 1):",
+        "detail": "贪心.376.摆动序列",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.376.摆动序列",
+        "description": "贪心.376.摆动序列",
+        "peekOfCode": "class Solution(object):\n    def wiggleMaxLength(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        status = 1\n        curLength = 1\n        result = 1\n        for i in range(1, len(nums), 1):",
+        "detail": "贪心.376.摆动序列",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "贪心.406.根据身高重建队列",
         "description": "贪心.406.根据身高重建队列",
         "peekOfCode": "class Solution(object):\n    def reconstructQueue(self, people):\n        \"\"\"\n        :type people: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        queue = []\n        people.sort(key=lambda x: (-x[0], x[1]))\n        for x in people:\n            queue.insert(x[1], x)",
@@ -1297,6 +1315,15 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "贪心.45.跳跃游戏II",
+        "description": "贪心.45.跳跃游戏II",
+        "peekOfCode": "class Solution(object):\n    def jump(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        preMaxRight = 0\n        curMaxRight = 0\n        step = 0\n        for i in range(len(nums)):",
+        "detail": "贪心.45.跳跃游戏II",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "贪心.452.用最少数量的箭引爆气球",
         "description": "贪心.452.用最少数量的箭引爆气球",
         "peekOfCode": "class Solution(object):\n    def findMinArrowShots(self, points):\n        \"\"\"\n        :type points: List[List[int]]\n        :rtype: int\n        \"\"\"\n        points.sort(key=lambda x: x[0])\n        resultList = []\n        for point in points:\n            if not resultList or resultList[-1][1] < point[0]:",
@@ -1318,6 +1345,15 @@
         "importPath": "贪心.455.分发饼干",
         "description": "贪心.455.分发饼干",
         "peekOfCode": "class Solution(object):\n    def findContentChildren(self, g, s):\n        \"\"\"\n        :type g: List[int]\n        :type s: List[int]\n        :rtype: int\n        \"\"\"\n        g.sort(key=lambda x: -x)\n        s.sort(key=lambda x: -x)\n        i = j = sum = 0",
+        "detail": "贪心.455.分发饼干",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "贪心.455.分发饼干",
+        "description": "贪心.455.分发饼干",
+        "peekOfCode": "class Solution(object):\n    def findContentChildren(self, g, s):\n        \"\"\"\n        :type g: List[int]\n        :type s: List[int]\n        :rtype: int\n        \"\"\"\n        g.sort()\n        s.sort()\n        gIndex, sIndex = 0, 0",
         "detail": "贪心.455.分发饼干",
         "documentation": {}
     },

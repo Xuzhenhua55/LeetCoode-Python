@@ -37,3 +37,21 @@ class Solution(object):
                 if curMaxRight >= len(nums) - 1: break
 
         return step
+
+
+class Solution(object):
+
+    def jump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        preMaxRight = 0
+        curMaxRight = 0
+        step = 0
+        for i in range(len(nums)):
+            curMaxRight = max(curMaxRight, i + nums[i])
+            if i == preMaxRight:
+                step += 1
+                preMaxRight = min(curMaxRight, len(nums) - 1)
+        return step - 1

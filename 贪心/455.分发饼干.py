@@ -40,4 +40,24 @@ class Solution(object):
         return sum
 
 
+class Solution(object):
+
+    def findContentChildren(self, g, s):
+        """
+        :type g: List[int]
+        :type s: List[int]
+        :rtype: int
+        """
+        g.sort()
+        s.sort()
+        gIndex, sIndex = 0, 0
+        while gIndex < len(g) and sIndex < len(s):
+            if g[gIndex] <= s[sIndex]:
+                gIndex += 1
+                sIndex += 1
+            else:
+                sIndex += 1
+        return gIndex
+
+
 Solution().findContentChildren([1, 2, 3], [1, 1])
