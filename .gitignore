@@ -2,10 +2,9 @@
 .vscode/
 
 # Test files
-TestFile.py
 
 # Todo list
-toDoList.md
+TODO.md
 
 # Python
 __pycache__/
