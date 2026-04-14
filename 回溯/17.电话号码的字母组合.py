@@ -79,3 +79,38 @@ class Solution(object):
 
 
 print(Solution().letterCombinations("23"))
+
+
+# 解法三：DFS 用数字键映射（更简洁的回溯模板）
+class Solution:
+    def letterCombinations(self, digits: str) -> List[str]:
+        numToStr = {
+            2: "abc",
+            3: "def",
+            4: "ghi",
+            5: "jkl",
+            6: "mno",
+            7: "pqrs",
+            8: "tuv",
+            9: "wxyz"
+        }
+        self.resultList = list()
+        self.curPath = list()
+
+        def dfs(curIndex):
+            # 递归开头：剪枝 + 收集结果
+            if curIndex >= len(digits): return
+            if len(self.curPath) == len(digits):
+                self.resultList.append(''.join(self.curPath))
+                return
+
+            # 循环体：仅尝试扩展
+            digit = int(digits[curIndex])
+            targetStr = numToStr[digit]
+            for ch in targetStr:
+                self.curPath.append(ch)
+                dfs(curIndex + 1)
+                self.curPath.pop()
+
+        dfs(0)
+        return self.resultList
