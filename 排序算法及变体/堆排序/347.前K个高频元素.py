@@ -21,6 +21,29 @@ class Solution(object):
         return resultList
         # 注意resultList.reverse()返回值为None
         # reversed(list) 返回一个 迭代器，需要用 list() 转换才能得到真正的列表。
+
+
+# 解法二：使用 Counter + 小根堆（更简洁）
+import heapq
+from collections import Counter
+
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        result = list()
+        heap = list()
+        numToCnt = Counter(nums)
+
+        for num, cnt in numToCnt.items():
+            heapq.heappush(heap, (cnt, num))
+            if len(heap) > k:
+                heapq.heappop(heap)  # 弹出最小的，保留大的
+
+        for i in range(k):
+            curMaxNode = heap[0]
+            result.append(curMaxNode[1])
+            heapq.heappop(heap)
+
+        return result
                 
                 
         
