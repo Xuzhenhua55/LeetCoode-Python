@@ -35,13 +35,15 @@ class PPO:
         # detach(): 优势值作为常数权重，不参与梯度反向传播
         return advantages.detach()
 
-    def compute_policy_loss(self, advantages, cur_log_probs, old_log_probs, mask):
+    def compute_policy_loss(self, rewards, values, cur_log_probs, old_log_probs, mask):
         """
-        advantages:    [B, T]
+        rewards:       [B, T]
+        values:        [B, T]   critic 输出的状态价值
         cur_log_probs: [B, T]   当前策略的 log 概率
         old_log_probs: [B, T]   采样时旧策略的 log 概率
         mask:          [B, T]   有效 token 掩码
         """
+        advantages = self.compute_gae(rewards, values)  # [B, T]
         # ---- Actor Loss (Clipped Surrogate Objective) ----
         importance_ratios = torch.exp(cur_log_probs - old_log_probs)  # [B, T]
         # clamp 和 clip 在 PyTorch 中完全等价，torch.clip 是 torch.clamp 的别名。
@@ -103,9 +105,7 @@ class PPO:
         old_log_probs: [B, T]   采样时旧策略的 log 概率
         mask:          [B, T]   有效 token 掩码
         """
-        advantages = self.compute_gae(rewards, values)  # [B, T]
-
-        mean_actor_loss = self.compute_policy_loss(advantages, cur_log_probs, old_log_probs, mask)
+        mean_actor_loss = self.compute_policy_loss(rewards, values, cur_log_probs, old_log_probs, mask)
         mean_critic_loss = self.compute_value_loss(values, returns, mask)
 
         # 总 loss = actor loss + critic loss（系数 0.5 为常见超参，防止 critic loss 量级过大）
